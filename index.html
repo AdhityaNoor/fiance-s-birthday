@@ -80,14 +80,16 @@
       bottom: 0;
       background: rgba(0, 0, 0, 0.3);
       transition: all 1s ease;
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      overflow: hidden; /* Prevent any overflow */
     }
 
     #wallpaper {
-      animation: jj 10s infinite;
-      width: 100%;
-      height: 100%;
-      transform: scale(1);
-      transition: all 1.3s ease;
+      height: 100vh; /* Stretch to the full height */
+      width: auto; /* Maintain aspect ratio */
+      max-width: none; /* Allow it to exceed the viewport width */
     }
 
     #wallpaper2,
